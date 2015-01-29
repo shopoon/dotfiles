@@ -47,6 +47,12 @@ NeoBundle 'osyo-manga/vim-over'
 NeoBundle 'itchyny/lightline.vim'
 " vimでmemoをとる
 NeoBundle 'glidenote/memolist.vim'
+" Markdownのsyntax
+NeoBundle 'rcmdnk/vim-markdown'
+" Markdownをpreviewするためのプラグイン
+NeoBundle 'kannokanno/previm'
+NeoBundle 'tyru/open-browser.vim'
+
 " カラースキーム
 NeoBundle 'nanotech/jellybeans.vim'
 NeoBundle 'railscasts'
@@ -289,3 +295,9 @@ let g:memolist_unite = 1
 let g:memolist_unite_source = "file_rec"
 " インサートモードで開く
 let g:memolist_unite_option = "-auto-preview -start-insert"
+" キーマッピング
+nnoremap <Leader>mn :MemoNew<CR>
+nnoremap <Leader>ml :MemoList<CR>
+nnoremap <Leader>mg :MemoGrep<CR>
+" メモ一覧をUnite grepするコマンド
+command! -nargs=0 MemoGrep :Unite grep:~/Dropbox/Memo/ -no-quit

@@ -6,6 +6,8 @@ molokai
 neobundle.vim
 neocomplcache
 neomru.vim
+open-browser.vim
+previm
 railscasts
 surround.vim
 tcomment_vim
@@ -15,6 +17,7 @@ vim-colors-solarized
 vim-endwise
 vim-hybrid
 vim-indent-guides
+vim-markdown
 vim-over
 vim-ref
 vimfiler
