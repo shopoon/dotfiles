@@ -298,6 +298,5 @@ let g:memolist_unite_option = "-auto-preview -start-insert"
 " キーマッピング
 nnoremap <Leader>mn :MemoNew<CR>
 nnoremap <Leader>ml :MemoList<CR>
-nnoremap <Leader>mg :MemoGrep<CR>
-" メモ一覧をUnite grepするコマンド
-command! -nargs=0 MemoGrep :Unite grep:~/Dropbox/Memo/ -no-quit
+nnoremap <Leader>mg :<C-u>Unite grep:~/Dropbox/Memo<CR>
+
