@@ -1,4 +1,4 @@
-"-------------------------------------------------------------------------
+" --------------------------------------------------------------
 " NeoBundleに関する設定:
 "
 " vi互換をナシにする
@@ -47,6 +47,8 @@ NeoBundle 'osyo-manga/vim-over'
 NeoBundle 'itchyny/lightline.vim'
 " vimでmemoをとる
 NeoBundle 'glidenote/memolist.vim'
+" vim-rails
+NeoBundle 'tpope/vim-rails'
 " カラースキーム
 NeoBundle 'nanotech/jellybeans.vim'
 NeoBundle 'railscasts'
@@ -110,7 +112,7 @@ set whichwrap=b,s,h,l,<,>,[,]
 nnoremap j gj
 nnoremap k gk
 " Insertモードでも貼り付け
-nnoremap <c-v> <esc>pa
+"nnoremap <c-v> <esc>pa
 " Normalモードでもカーソル位置で改行
 nnoremap <CR> i<CR><esc>
 
