@@ -24,6 +24,8 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neomru.vim'
 " 補完用のプラグイン
 NeoBundle 'Shougo/neocomplcache'
+" Unite-rails
+NeoBundle 'basyura/unite-rails'
 " Ruby向けにendを自動挿入
 NeoBundle 'tpope/vim-endwise'
 " コメントON/OFFを手軽に実行（Ctrl + _x2）
@@ -47,6 +49,10 @@ NeoBundle 'osyo-manga/vim-over'
 NeoBundle 'itchyny/lightline.vim'
 " vimでmemoをとる
 NeoBundle 'glidenote/memolist.vim'
+" markdownをpreviewする
+NeoBundle 'kannokanno/previm'
+" previmでブラウザ開くために必要
+NeoBundle 'tyru/open-browser.vim'
 " vim-rails
 NeoBundle 'tpope/vim-rails'
 " カラースキーム
@@ -113,6 +119,8 @@ nnoremap j gj
 nnoremap k gk
 " Insertモードでも貼り付け
 "nnoremap <c-v> <esc>pa
+" VisualモードでCtrl-pで直前のコピーを貼り付け
+vnoremap <silent> <C-p> "0p<CR>
 " Normalモードでもカーソル位置で改行
 nnoremap <CR> i<CR><esc>
 
@@ -283,6 +291,10 @@ aug END
 "--------------------------------------------------------------------------
 " Memolist.vim用の設定
 "
+" キーマップ
+map <Leader>ml  :MemoList<CR>
+map <Leader>mn  :MemoNew<CR>
+map <Leader>mg  :MemoGrep<CR>
 " 保存するPathの指定
 let g:memolist_path = "~/Dropbox/Memo/"
 " uniteと連携する
@@ -291,3 +303,5 @@ let g:memolist_unite = 1
 let g:memolist_unite_source = "file_rec"
 " インサートモードで開く
 let g:memolist_unite_option = "-auto-preview -start-insert"
+" prefixなし
+let g:memolist_filename_prefix_none = 1
