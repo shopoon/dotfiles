@@ -12,6 +12,7 @@ railscasts
 surround.vim
 tcomment_vim
 unite-colorscheme
+unite-rails
 unite.vim
 vim-colors-solarized
 vim-endwise
@@ -19,6 +20,7 @@ vim-hybrid
 vim-indent-guides
 vim-markdown
 vim-over
+vim-rails
 vim-ref
 vimfiler
 vimproc

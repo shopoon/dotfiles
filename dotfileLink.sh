@@ -1,7 +1,7 @@
 #! /bin/bash
-ln -is ~/.dotfiles/.vimrc ~/.vimrc
-ln -is ~/.dotfiles/.gvimrc ~/.gvimrc
-ln -is ~/.dotfiles/.zshrc ~/.zshrc
-ln -is ~/.dotfiles/.zprofile ~/.zprofile
-ln -is ~/.dotfiles/.vim ~/.vim
-ln -is ~/.dotfiles/.oh-my-zsh ~/.oh-my-zsh
+ln -fs ~/.dotfiles/.vimrc ~/.vimrc
+ln -fs ~/.dotfiles/.gvimrc ~/.gvimrc
+ln -fs ~/.dotfiles/.zshrc ~/.zshrc
+ln -fs ~/.dotfiles/.zprofile ~/.zprofile
+ln -fs ~/.dotfiles/.vim ~/.vim
+ln -fs ~/.dotfiles/.tmux.conf ~/.tmux.conf
